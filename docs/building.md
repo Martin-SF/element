@@ -53,6 +53,21 @@ BOOST_ROOT="/usr/local/include" meson setup \
     build
 meson compile -C build
 ```
+#####
+
+download vst sdk from here .....
+
+change in subs.ini or osx.ini these thinks so it compiles:
+....
+
+
+
+
+to prevent macos from asking multiple times for mic permissions run:
+```
+codesign --deep --force --verify --verbose --sign - /path/to/Element.app
+```
+#####
 
 This will make an app bundle somwhere in the `build` dir.  Run it...
 ```
